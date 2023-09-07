@@ -1,0 +1,51 @@
+:root {
+/*	Colors
+
+	Primary*/
+
+	--very-dark-blue: hsl(233, 47%, 7%);
+	--dark-desaturated-blue: hsl(244, 38%, 16%);
+	--soft-violet: hsl(277, 64%, 61%);
+
+	/*Neutral*/
+
+	--white: hsl(0, 0%, 100%);
+	--slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+	--slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6);
+
+	/*Font Family*/
+	--ff-inter: 'Inter', sans-serif;
+	--ff-lexend-deca: 'Lexend Deca', sans-serif;
+
+	/*Font Weight*/
+	--fw-regular: 400;
+	--fw-bold: 700;
+}
+
+*,
+*:after,
+*:before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-family: var(--ff-inter);
+	font-size: 15px;
+}
+
+img,
+picture,
+svg {
+	display: block;
+	max-width: 100%;
+}

@@ -152,7 +152,6 @@ svg {
 
 	.stats-container {
 		display: flex;
-		justify-content: space-between;
 	}
 
 	.stats-container .inner:not(.inner:last-child) {

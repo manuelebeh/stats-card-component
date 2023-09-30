@@ -61,23 +61,15 @@ svg {
 }
 
 .illustration {
-	position: relative;
+	background-color: var(--clr-soft-violet);
 }
 
 .illustration img {
 	height: 240px;
 	width: 100%;
 	object-fit: cover;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--clr-soft-violet);
-    opacity: .5;
+	mix-blend-mode: multiply;
+	opacity: .7;
 }
 
 .card-information {

@@ -55,8 +55,6 @@ svg {
 }
 
 .container {
-	display: grid;
-
 	border-radius: 8px;
 	overflow: hidden;
 	min-width: 327px;
@@ -110,11 +108,54 @@ svg {
 .stats-container .inner h2 {
 	font-size: 24px;
 	color: var(--clr-white);
-	margin: 0 0 2px 0;
+	margin: 0 0 16px 0;
 }
 
 .stats-container .inner p {
 	text-transform: uppercase;
 	font-family: var(--ff-lexend-deca);
 	font-size: 12px;
+}
+
+@media screen and (min-width: 933px) {
+	.container {
+		display: flex;
+		flex-direction: row-reverse;
+
+		max-width: 1110px;
+		max-height: 446px;
+	}
+
+	.illustration,
+	.card-information {
+		width: 50%;
+	}
+
+	.illustration img {
+		height: 100%;
+	}
+
+	.card-information {
+		/*padding: 72px;*/
+		padding: 77px 106px 59px 72px;
+		text-align: left;
+	}
+
+	.card-information > h1 {
+		font-size: 36px;
+		margin: 0 0 25px 0;
+	}
+
+	.card-information > p {
+		margin: 0 0 72px 0;
+	}
+
+	.stats-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.stats-container .inner:not(.inner:last-child) {
+		margin: 0;
+	}
 }

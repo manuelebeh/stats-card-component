@@ -108,13 +108,15 @@ svg {
 .stats-container .inner h2 {
 	font-size: 24px;
 	color: var(--clr-white);
-	margin: 0 0 16px 0;
+	margin: 0 0 2px 0;
 }
 
 .stats-container .inner p {
 	text-transform: uppercase;
 	font-family: var(--ff-lexend-deca);
 	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 25.5px;
 }
 
 @media screen and (min-width: 933px) {
@@ -123,7 +125,6 @@ svg {
 		flex-direction: row-reverse;
 
 		max-width: 1110px;
-		max-height: 446px;
 	}
 
 	.illustration,
@@ -136,8 +137,7 @@ svg {
 	}
 
 	.card-information {
-		/*padding: 72px;*/
-		padding: 77px 106px 59px 72px;
+		padding: 71px 106px 59px 71px;
 		text-align: left;
 	}
 
@@ -156,6 +156,6 @@ svg {
 	}
 
 	.stats-container .inner:not(.inner:last-child) {
-		margin: 0;
+		margin: 0 60px 0 0;
 	}
 }
